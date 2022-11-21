@@ -784,9 +784,8 @@ main.content {
     padding: 8px;
     position: absolute;
     left: 5%;
-    top: 5%;
+    top: 3%;
     width: 90%;
-    overflow: hidden;
 }
 .course-name{
     position: absolute;

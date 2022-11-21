@@ -627,235 +627,6 @@ main.content {
   }
 
 /*=================================================================*/
-/*                      HOME                             
-/*=================================================================*/
-.site-logo {
-    width: 100px;
-    height: 100px;
-}
-#home {
-    background-image: url('/icons/background');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.intro img {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
-}
-.intro ul li a img{
-    margin: 0;
-    padding: 0;
-    width: 30px;
-    height: 30px;
-}
-/*=================================================================*/
-/*                      ABOUT                             
-/*=================================================================*/
-.aboutLeft img {
-    width: 200px;
-    height: 200px;
-    border-radius: 25px;
-    box-shadow:  4px 4px 6px #868686,
-             -4px -4px 6px #ffffff;
-}
-.aboutLeft .mt-3 a{
-    width: 200px;
-    height: 50px;
-    border-radius: 15px;
-     box-shadow:  4px 4px 6px #868686,
-             -4px -4px 6px #ffffff;
-}
-.aboutRight {
-    background-color: #e0e0e0;
-    box-shadow:  4px 4px 4px #868686,
-             -4px -4px 6px #ffffff;
-}
-.skills {
-    justify-content: space-around;
-}
-.skills img {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow:  4px 4px 6px #5a5a5a,
-             -4px -4px 6px #ffffff;
-}
-
-/*=================================================================*/
-/*                      PROJECTS                              
-/*=================================================================*/
-
-.project-wrapper [class*=col-] {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-  
-.pf-filter-wrapper {
-    display: none;
-}
-
-.project-item {
-    position: relative;
-    overflow: hidden;
-}
-.project-item .thumb {
-    overflow: hidden;
-}
-.project-item .thumb img {
-    filter: opacity(0.5);
-}
-.video-box {
-    height: 60vh;
-    position: relative;
-    box-shadow:  4px 4px 6px #868686,
-                -4px -4px 6px #ffffff;
-}
-.video {
-    padding: 8px;
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    width: 90%;
-    box-shadow:  inset 4px 4px 6px #868686,
-    inset -4px -4px 6px #ffffff;
-}
-.video iframe {
-    width: 100%;
-    height: 300px; 
-}
-.video-box .details {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    left: 5%;
-    bottom: 3%;
-    position: absolute;
-}
-.details .project-name{
-    /* background-color: rgb(249, 215, 76); */
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2%;
-    width: 70%;
-    font-weight: bold;
-    text-shadow:  1px 1px 1px #868686,
-             -1px -1px 1px #ffffff;
-}
-.details .project-about {
-    background-color: rgb(249, 123, 139);
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2%;
-    width: 20%;
-    box-shadow:  4px 4px 6px #868686,
-             -4px -4px 6px #ffffff;
-    cursor: pointer;
-}
-.details .project-about a {
-    color: white;
-}
-
-/*=================================================================*/
-/*                      COURSES                            
-/*=================================================================*/
-
-.course-wrapper [class*=col-] {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-  
-.pf-filter-wrapper {
-    display: none;
-}
-.course-box {
-    height: 260px;
-    position: relative;
-    box-shadow:  4px 4px 6px #868686,
-    -4px -4px 6px #ffffff;
-}
-.certificate {
-    padding: 8px;
-    position: absolute;
-    left: 5%;
-    top: 3%;
-    width: 90%;
-}
-.course-name{
-    position: absolute;
-    bottom: 0%;
-    left: 5%;
-    width: 90%;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2%;
-    text-shadow: 1px 1px 1px #b8b9be, -1px -1px 1px #fff;
-}
-
-/*=================================================================*/
-/*                      EXPERIENCE                          
-/*=================================================================*/
-.experience-box {
-    box-shadow:  4px 4px 6px #868686,
-    -4px -4px 6px #ffffff;
-}
-
-
-
-/*=================================================================*/
-/*                      EDUCATION                          
-/*=================================================================*/
-.education-box {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    height: 150px;
-    padding: 20px;
-}
-
-.education-box h3 {
-    font-size: 20px;
-}
-.education-box:hover {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-}
-.year {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 0;
-}
-
-/*=================================================================*/
-/*                      CONTACT                              
-/*=================================================================*/
-.contact-info {
-    background-image: url("../images/map.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 200px;
-}
-.contact-info h3 {
-    font-size: 23px;
-    margin: 0 0 10px;
-    text-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
-}
-.form-group input, .form-group textarea{
-    box-shadow:  inset 4px 4px 6px #868686,
-    inset -4px -4px 6px #ffffff;
-}
-
-/*=================================================================*/
 /*                      THEME ELEMENTS
 /*=================================================================*/
 /* === Timeline === */
@@ -1512,7 +1283,248 @@ footer.footer.light {
     cursor: not-allowed;
   }
   
+/*=================================================================*/
+/*                      HOME                             
+/*=================================================================*/
+.site-logo {
+    width: 100px;
+    height: 100px;
+}
+#home {
+    background-image: url('/icons/background');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro {
+    position: relative;
+    bottom: 10vh;
+}
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+.intro ul li a img{
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+/*=================================================================*/
+/*                      ABOUT                             
+/*=================================================================*/
+.aboutLeft .profile-photo{
+    display: flex;
+}
+.aboutLeft .download {
+    display: flex;
+}
+.aboutLeft img {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    box-shadow:  4px 4px 6px #868686,
+    -4px -4px 6px #ffffff;
+}
+.aboutLeft .download a{
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow:  4px 4px 6px #868686,
+             -4px -4px 6px #ffffff;
+}
+.aboutRight {
+    background-color: #e0e0e0;
+    box-shadow:  4px 4px 4px #868686,
+             -4px -4px 6px #ffffff;
+}
+.skills {
+    justify-content: space-around;
+}
+.skills img {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  4px 4px 6px #5a5a5a,
+             -4px -4px 6px #ffffff;
+}
 
+/*=================================================================*/
+/*                      PROJECTS                              
+/*=================================================================*/
+
+.project-wrapper [class*=col-] {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+  
+.pf-filter-wrapper {
+    display: none;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+.project-item .thumb {
+    overflow: hidden;
+}
+.project-item .thumb img {
+    filter: opacity(0.5);
+}
+.video-box {
+    height: 60vh;
+    position: relative;
+    box-shadow:  4px 4px 6px #868686,
+                -4px -4px 6px #ffffff;
+}
+.video {
+    padding: 8px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    box-shadow:  inset 4px 4px 6px #868686,
+    inset -4px -4px 6px #ffffff;
+}
+.video iframe {
+    width: 100%;
+    height: 300px; 
+}
+.video-box .details {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    left: 5%;
+    bottom: 3%;
+    position: absolute;
+}
+.details .project-name{
+    /* background-color: rgb(249, 215, 76); */
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+    width: 70%;
+    font-weight: bold;
+    text-shadow:  1px 1px 1px #868686,
+             -1px -1px 1px #ffffff;
+}
+.details .project-about {
+    background-color: rgb(249, 123, 139);
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+    width: 20%;
+    box-shadow:  4px 4px 6px #868686,
+             -4px -4px 6px #ffffff;
+    cursor: pointer;
+}
+.details .project-about a {
+    color: white;
+}
+
+/*=================================================================*/
+/*                      COURSES                            
+/*=================================================================*/
+
+.course-wrapper [class*=col-] {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+  
+.pf-filter-wrapper {
+    display: none;
+}
+.course-box {
+    height: 260px;
+    position: relative;
+    box-shadow:  4px 4px 6px #868686,
+    -4px -4px 6px #ffffff;
+}
+.certificate {
+    padding: 8px;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    width: 90%;
+}
+.course-name{
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+    text-shadow: 1px 1px 1px #b8b9be, -1px -1px 1px #fff;
+}
+
+/*=================================================================*/
+/*                      EXPERIENCE                          
+/*=================================================================*/
+.experience-box {
+    box-shadow:  4px 4px 6px #868686,
+    -4px -4px 6px #ffffff;
+}
+
+
+
+/*=================================================================*/
+/*                      EDUCATION                          
+/*=================================================================*/
+.education-box {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 150px;
+    padding: 20px;
+}
+
+.education-box h3 {
+    font-size: 20px;
+}
+.education-box:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.year {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
+}
+
+/*=================================================================*/
+/*                      CONTACT                              
+/*=================================================================*/
+.contact-info {
+    background-image: url("../images/map.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 200px;
+}
+.contact-info h3 {
+    font-size: 23px;
+    margin: 0 0 10px;
+    text-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+.form-group input, .form-group textarea{
+    box-shadow:  inset 4px 4px 6px #868686,
+    inset -4px -4px 6px #ffffff;
+}
 
 /*=================================================================*/
 /*                      RESPONSIVE SETTINGS

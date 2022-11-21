@@ -710,8 +710,10 @@ main.content {
     filter: opacity(0.5);
 }
 .video-box {
-    height: 280px;
+    height: 60vh;
     position: relative;
+    box-shadow:  4px 4px 6px #868686,
+                -4px -4px 6px #ffffff;
 }
 .video {
     padding: 8px;
@@ -720,7 +722,11 @@ main.content {
     top: 5%;
     width: 90%;
     box-shadow:  inset 4px 4px 6px #868686,
-             inset -4px -4px 6px #ffffff;
+    inset -4px -4px 6px #ffffff;
+}
+.video iframe {
+    width: 100%;
+    height: 300px; 
 }
 .video-box .details {
     display: flex;
@@ -771,6 +777,8 @@ main.content {
 .course-box {
     height: 260px;
     position: relative;
+    box-shadow:  4px 4px 6px #868686,
+    -4px -4px 6px #ffffff;
 }
 .certificate {
     padding: 8px;
@@ -791,6 +799,15 @@ main.content {
     text-shadow: 1px 1px 1px #b8b9be, -1px -1px 1px #fff;
 }
 
+/*=================================================================*/
+/*                      EXPERIENCE                          
+/*=================================================================*/
+.experience-box {
+    box-shadow:  4px 4px 6px #868686,
+    -4px -4px 6px #ffffff;
+}
+
+
 
 /*=================================================================*/
 /*                      EDUCATION                          
@@ -805,6 +822,7 @@ main.content {
     height: 150px;
     padding: 20px;
 }
+
 .education-box h3 {
     font-size: 20px;
 }
@@ -837,9 +855,6 @@ main.content {
     box-shadow:  inset 4px 4px 6px #868686,
     inset -4px -4px 6px #ffffff;
 }
-
-
-
 
 /*=================================================================*/
 /*                      THEME ELEMENTS

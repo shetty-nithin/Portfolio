@@ -1667,4 +1667,8 @@ footer.footer.light {
     header.desktop-header-2 .footer {
       margin-top: 100px;
     }
+    .video iframe {
+        width: 100%;
+        height: 270px; 
+    }
   }

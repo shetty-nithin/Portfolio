@@ -1,6 +1,61 @@
- .contactSection {
-    background-color: #264143;
-    height: 40vh;
-    border: 1px solid gray;
-    border-radius: 15px;
- }
+@import "../colors";
+
+@font-face {
+   font-family: 'neuropolitical';
+   src: url('../neuropolitical/neuropolitical\ rg.otf') format('truetype');
+}
+
+.contactSection {
+   padding: 3rem;
+   background-color: #264143;
+   font-family: neuropolitical;
+   gap: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   // flex-direction: column;
+   
+   .left {
+      color: $fontHeadingColor;
+   }
+   
+   .right {
+      padding: 1rem;
+      
+      form {
+         input {
+            height: 50px;
+         }
+         input, textarea{
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+            color: $fontTextColor;
+            padding: 10px;
+            background-color: #264143;
+            border: none;
+            outline: none;
+            box-shadow: inset -4px -4px 7px #3d686b,
+                        inset 4px 4px 7px #0f1a1b;
+         }
+         .btnDiv {
+            display: block;
+            text-align: right;
+            
+            button {
+               padding: 5px 10px;
+               background: transparent;
+               color: $fontTextColor;
+               border: 2px solid $fontHeadingColor;
+            }
+            button:hover{
+               color: $backgroundColor;
+               background-color: $fontHeadingColor;
+            }
+         }
+      }
+
+      .dummy {
+         background-color: red;
+         
+      }
+   }
+}

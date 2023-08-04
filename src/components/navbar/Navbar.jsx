@@ -36,7 +36,8 @@ const Navbar = () => {
 	return (
 		<div id='navbar' className="navbar container">
 			<div className="left">
-				Nithin Shetty	
+				<div className="vertical"></div>
+				<div className="diagonal"></div>
 			</div>
 			{windowWidth < 1000 
 				? 	<>
@@ -45,7 +46,6 @@ const Navbar = () => {
 							<div onClick={hideNavbar}><a href="#aboutSection">About</a></div>
 							<div onClick={hideNavbar}><a href="#projectSection">Project</a></div>
 							<div onClick={hideNavbar}><a href="#experienceSection">Experience</a></div>
-							<div onClick={hideNavbar}><a href="#educationSection">Education</a></div>
 							<div onClick={hideNavbar}><a href="#contactSection">Contact</a></div>
 						</div>
 					</>
@@ -55,7 +55,6 @@ const Navbar = () => {
 							<div><a href="#aboutSection">About</a></div>
 							<div><a href="#projectSection">Project</a></div>
 							<div><a href="#experienceSection">Experience</a></div>
-							<div><a href="#educationSection">Education</a></div>
 							<div><a href="#contactSection">Contact</a></div>
 						</div>
 				 	</>

@@ -1,13 +1,56 @@
+@import "../colors";
+
+@font-face {
+    font-family: 'neuropolitical';
+    src: url('../neuropolitical/neuropolitical\ rg.otf') format('truetype');
+}
+
 .navbar {
-    background-color: #fcde67;
+    background-color: $backgroundColor;
     border-radius: 15px;
     padding: 10px 20px;
     font-weight: bold;
-    color: #9caf6f;
+    color: $fontHeadingColor;
     
     .left {
         padding: 10px;
         font-size: 24px;
+        display: flex;
+        gap: 10px;
+        
+        .vertical {
+            height: 50px;
+            width: 22px;
+            background-color: white;
+            animation: vertical 0.4s;
+        }
+        @keyframes vertical {
+            from {
+                transform: translateY(100vh);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .diagonal {
+            height: 45px;
+            width: 22px;
+            font-size: 24px;
+            background-color: $fontHeadingColor;
+            position: relative;
+            bottom: -2.5px;
+            transform: rotate(-35deg);
+            animation: diagonal 0.4s;
+        }
+        @keyframes diagonal {
+            from {
+                transform: translateX(100vw);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
     }
     
     .right {
@@ -19,12 +62,16 @@
             
             a {
                 text-decoration: none;
-                color: #9caf6f;
+                color: $fontHeadingColor;
+                font-size: 1rem;
             }
         }
         div:hover {
             cursor: pointer;
-            color: rgb(111, 131, 69);
+            
+            a {
+                color: $fontTextColor;
+            }
         }
     }
 }
@@ -36,7 +83,8 @@
         right: 20px;
         top: 50px;
         z-index: -1;
-        background-color: #4f8fc0;
+        background-color: $backgroundColor;
+        border-radius: 10px;
         height: 40vh;
         width: 25vw;
         display: none;
@@ -46,7 +94,6 @@
 
     }
 }
-
 @media (max-width: 600px){
     .right {
         width: 40vw;

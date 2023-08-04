@@ -4,14 +4,14 @@ import Navbar from '../navbar/Navbar';
 import { FaGithub, FaLinkedin, FaDiscord } from 'react-icons/fa';
 
 const Home = () => {
-	const [githubColor, setGithubColor] = useState('#9caf6f');
-	const [linkedInColor, setLinkedInColor] = useState('#9caf6f');
-	const [discordColor, setDiscordColor] = useState('#9caf6f');
+	const [githubColor, setGithubColor] = useState('#D3C25F');
+	const [linkedInColor, setLinkedInColor] = useState('#D3C25F');
+	const [discordColor, setDiscordColor] = useState('#D3C25F');
 
 	const handleChangeColor = (setFunction) => {
 		return {
-			onMouseEnter: () => setFunction('#5c732a'),
-			onMouseLeave: () => setFunction('#9caf6f')
+			onMouseEnter: () => setFunction('#FFD700'),
+			onMouseLeave: () => setFunction('#CCB434')
 		}
 	}
 
@@ -22,26 +22,20 @@ const Home = () => {
 					<Navbar/>
 				</div>
 				<div className="bottom container">
-					<div className="bottomLeft">
+					<div className="bottomLeft col-lg-2">
 						<a href="https://github.com/shetty-nithin"><FaGithub {...handleChangeColor(setGithubColor)} color={githubColor} size={24}/></a>
 						<a href="https://www.linkedin.com/in/shetty-nithin/"><FaLinkedin {...handleChangeColor(setLinkedInColor)} color={linkedInColor} size={24}/></a>
 						<a href="ittps://www.linkedin.com/in/shetty-nithin/"><FaDiscord {...handleChangeColor(setDiscordColor)} color={discordColor} size={24}/></a>
 					</div>
-					<div className="bottomRight">
-						<div className='photo'>
-							<img src="../../photos/saffron_blue.png" alt="nithin's photo" />
-							{/* <img src={"./saffron_blue.png"} alt="nithin's photo" /> */}
-						</div>
+					<div className="bottomRight col-lg-10">
 						<div className="text">
-							<h3>Coding for </h3>
-							<span>PASSION</span>
+							<h3>coding with </h3>
+							<span>pa</span>
+							<span>ssi</span>
+							<span>on</span>
 						</div>
 					</div>
 				</div>
-				<div className="square1"></div>
-				<div className="circle1"></div>
-				<div className="circle2"></div>
-				<div className="circle3"></div>
 			</div>
 		</div>
 	);

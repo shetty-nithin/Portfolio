@@ -1,5 +1,74 @@
+@import "../colors";
+
+@font-face {
+    font-family: 'neuropolitical';
+    src: url('../neuropolitical/neuropolitical\ rg.otf') format('truetype');
+}
+
 .aboutSection {
-    height: 100vh;
-    border: 1px solid gray;
-    border-radius: 15px;
-} 
+    padding: 3rem;
+    background-color: $backgroundColor;
+    color: $fontTextColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: neuropolitical;
+    font-size: 0.8rem;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    .aboutePhoto {
+        .photo {
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+        }
+    }
+    .abouteText {
+        padding: 5px  5px 5px 20px;
+        line-height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        
+        .name, .text, .education {
+            margin-top: 2rem;
+        }
+        
+        .name {
+            animation: slideRight 1s ease;
+            
+            h3, h4 {
+                color: $fontHeadingColor;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .text {
+            animation: slideRight 1.5s ease;
+        }
+
+        .education {
+            animation: slideRight 2s ease;
+
+            h6 {
+                color: $fontHeadingColor;
+            }
+        }
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

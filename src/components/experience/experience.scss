@@ -1,5 +1,35 @@
+@import "../colors";
+
+@font-face {
+    font-family: 'neuropolitical';
+    src: url('../neuropolitical/neuropolitical\ rg.otf') format('truetype');
+}
+
 .experienceSection {
-    height: 100vh;
-    border: 1px solid gray;
-    border-radius: 15px;
+    background-color: $backgroundColor;
+    padding: 3rem;
+    font-family: neuropolitical;
+
+    h3 {
+        color: $fontHeadingColor;
+    }
+
+    .experiences {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+        
+        .exp {
+            background-color: #d6345c;
+            padding: 20px;
+            border-radius: 10px;
+            color: $fontTextColor; 
+            transition: transform 0.3s ease,0.3s ease;
+        }
+        .exp:hover{
+            transform: translateY(-5px);
+        }
+    }
 }

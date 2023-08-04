@@ -1,5 +1,73 @@
+@import "../colors";
+
+@font-face {
+    font-family: 'neuropolitical';
+    src: url('../neuropolitical/neuropolitical\ rg.otf') format('truetype');
+}
+
 .project {
-    height: 100vh;
-    border: 1px solid gray;
-    border-radius: 15px;
+    background-color: rgb(36,38,45);
+    padding: 3rem;
+    font-family: neuropolitical;
+    
+    h3 {
+        color: $fontHeadingColor;
+    }
+    
+    .cards {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+        
+        .projectCard {
+            height: 33vh;
+            padding: 10px;
+            border-radius: 10px;
+            // border: 1px solid $fontHeadingColor;
+            align-items: center;
+            background: $backgroundColor;
+            box-shadow:  -5px -5px 10px #0e0f12,
+                        5px 5px 10px #3a3d48;
+            
+            iframe {
+                width: 100%;
+                height: 23vh;
+            }
+            .details {
+                margin-top: 2vh;
+                color: #c0c0c0;
+                display: flex;
+                justify-content: space-between;
+
+                h5 {
+                    font-size: 1rem;
+                }
+                div {
+                    background-color: transparent;
+                    // border: 2px solid #EB555D;
+                    border: 2px solid rgb(24,25,34);
+                    padding: 2px 4px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    
+                    a {
+                        color: #c0c0c0;
+                        text-decoration: none;
+                    }
+                }
+                div:hover {
+                    background-color: #EB555D;
+                    
+                    a {
+                        color: $backgroundColor;
+                    }
+                }
+            }
+        }
+        .projectCard:hover {
+            background-color: rgb(24,25,34);
+        }
+    }
 } 

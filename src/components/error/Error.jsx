@@ -6,7 +6,7 @@ const Error = () => {
     const error = useRouteError();
 
     return (
-        <div class="error" style={{backgroundColor: '#edf0ef', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+        <div className="error" style={{backgroundColor: '#edf0ef', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
             <h1>Oops!</h1>
             <p>
                 <i>{error.statusText || error.message}</i>

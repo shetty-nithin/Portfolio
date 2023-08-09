@@ -6,24 +6,36 @@
 }
 
 .contactSection {
+   margin-bottom: 10px;
    padding: 3rem;
    background-color: #264143;
    font-family: neuropolitical;
    gap: 30px;
    display: flex;
+   justify-content: space-around;
    flex-wrap: wrap;
-   // flex-direction: column;
    
-   .left {
+   .leftDiv {
       color: $fontHeadingColor;
+      
+      .leftText {
+         margin-top: 50px;
+         color: $fontTextColor;
+
+         a {
+            color: $fontHeadingColor;
+         }
+      }
    }
    
-   .right {
+   .rightDiv {
+      align-items: center;
+      justify-content: center;
       padding: 1rem;
       
       form {
          input {
-            height: 50px;
+            height: 50px; 
          }
          input, textarea{
             font-size: 0.8rem;
@@ -34,9 +46,11 @@
             border: none;
             outline: none;
             box-shadow: inset -4px -4px 7px #3d686b,
-                        inset 4px 4px 7px #0f1a1b;
+            inset 4px 4px 7px #0f1a1b;
          }
          .btnDiv {
+            padding: 0;
+            width: 100%;
             display: block;
             text-align: right;
             
@@ -51,11 +65,6 @@
                background-color: $fontHeadingColor;
             }
          }
-      }
-
-      .dummy {
-         background-color: red;
-         
       }
    }
 }

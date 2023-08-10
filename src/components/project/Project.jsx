@@ -5,13 +5,7 @@ const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY;
 const REACT_APP_PLAYLIST_ID = process.env.REACT_APP_PLAYLIST_ID;
 
 const Project = () => {
-    const [showDescription, setShowDescription] = useState(false);
     const [ytData, setYtData] = useState([]);
-
-    const toggleDescription = () => {
-            setShowDescription((prevState) => !prevState);
-    };
-        
 
     useEffect(() => {
         const projectData = async () => {

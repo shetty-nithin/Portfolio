@@ -22,10 +22,11 @@
         justify-content: space-around;
         
         .exp {
-            background-color: #d6345c;
+            background-color: #FFFFFF;
             padding: 20px;
             border-radius: 10px;
-            color: $fontTextColor; 
+            // color: $fontTextColor; 
+            color: $backgroundColor; 
             transition: transform 0.3s ease,0.3s ease;
         }
         .exp:hover{

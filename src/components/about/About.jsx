@@ -13,15 +13,16 @@ const About = () => {
             <div className="abouteText col-lg-8 col-md-7">
                 <div className="name animateLeft">
                     <h3>Nithin Shetty</h3>
-                    <h4>Software Developer | Signalling Engineer</h4>
+                    <h4>Signalling Engineer | Software Developer</h4>
                 </div>
                 <div className="text">
                     <p>
-                        My journey spans roles in system verification and validation at Alstom and Hitachi Rail STS.
-                        While my current involvement in various metro projects focuses on 'signalling' system verification, my true passion lies in being a dedicated and enthusiastic software developer. Transitioning into full-fledged software development, I'm dedicated to creating user-friendly web applications using .NET, ReactJs, and NodeJs, C++ etc. Beyond my professional journey, personal projects like Roomz.com and Airline Reservation reflect my authentic love for coding.
+                        {/* My journey spans roles in system verification and validation at Alstom and Hitachi Rail STS.
+                        While my current involvement in various metro projects focuses on 'signalling' system verification, my true passion lies in being a dedicated and enthusiastic software developer. Transitioning into full-fledged software development, I'm dedicated to creating user-friendly web applications using .NET, ReactJs, and NodeJs, C++ etc. Beyond my professional journey, personal projects like Roomz.com and Airline Reservation reflect my authentic love for coding. */}
+                        My journey spans roles in system verification and validation at Alstom and Hitachi Rail STS. Currently, as a CBTC System Verification Engineer at Alstom, I ensure data consistency, automate processes, and lead project verification efforts for metro projects. Previously, at Hitachi Rail STS, I was involved in the verification, validation, and commissioning of mainline projects across India. Alongside my professional work, <p/>I am dedicated to creating user-friendly web applications using ReactJs, NodeJs, and C++. Personal projects like Roomz.com and Airline Reservation showcase my development skills.
                         <br/>
                         <br/>
-                        Currently seeking opportunities as a software developer/engineer, I'm eager to collaborate, learn, and make a meaningful impact with an insatiable thirst for knowledge.
+                        I'm eager to collaborate, learn, and make a meaningful impact with an insatiable thirst for knowledge.
                     </p>
                 </div>
                 <div className="education">
